@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "nunito";
+}
+h1{
+    margin:auto;
+    width: fit-content;
+    font-size: 70px;
+    text-align:center;
+    margin-top: 50px;
+}
+.con1, .con2{
+    background-color: #eee;
+    width: 70%;
+    margin: auto;
+    min-width: 320px;
+    max-width: 800px;
+    margin-top: 50px;
+    padding: 25px;
+    border-radius: 10px;
+}
+.con2{
+    max-height: 50vh;
+    overflow-y: scroll;
+}
+input, button, div{
+    border-radius: 10px;
+}
+.con1{
+    display:flex;
+    justify-content: space-between;
+}
+.con1 input{
+    border:none;
+    width: 80%;
+    height: 50px;
+    font-size: 25px;
+    padding-left: 20px
+}
+.con1 button{
+    background-color: rgb(255,83,55);
+    border: none;
+    width: 95px;
+    height: 50px;
+    margin-left: 15px;
+    color:white;
+    font-size: 17px;
+}
+.con2 div{
+    background-color: white;
+    min-height: 50px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    padding-left: 20px;
+}
+.con2 div p{
+    font-size: 25px;
+    max-width: calc(100% - 100px);
+    outline: none;
+    overflow: hidden;
+}
+.con2 div:not(:first-child){
+    margin-top: 20px;
+}
+.con2 div button{
+    background-color: rgb(255,83,55);
+    border: none;
+    height: 35px;
+    position:absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    width: 70px;
+    color:white;
+    border-radius: 5px;
+}
