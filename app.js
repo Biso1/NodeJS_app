@@ -22,6 +22,7 @@ app.use(function(req, res, next) {
   next();
 });
 app.get("/content", async (req, res) => {
+  console.log(JSON.stringify(req.headers))
   const result = await messages.findOne({});
   res.send(result);
 });
